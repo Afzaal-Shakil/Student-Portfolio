@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | StudentPortfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">StudentPortfolio</a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="index.html text-white">Back to Home</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container flex-grow-1 d-flex align-items-center justify-content-center py-5">
+        <div class="card border-0 shadow-lg" style="max-width: 450px; width: 100%;">
+            <div class="card-body p-5">
+                
+                <ul class="nav nav-pills nav-justified mb-4" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <button class="nav-link active fw-bold" id="pills-login-tab" data-bs-toggle="pill" data-bs-target="#pills-login">Login</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link fw-bold" id="pills-signup-tab" data-bs-toggle="pill" data-bs-target="#pills-signup">Sign Up</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="pills-login">
+                        <form id="loginForm">
+                            <div class="mb-3">
+                                <label class="form-label">Email Address</label>
+                                <input type="email" class="form-control" placeholder="Enter your email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Password</label>
+                                <input type="password" class="form-control" placeholder="••••••••" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 fw-bold">Sign In</button>
+                        </form>
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-signup">
+                        <form id="signupForm">
+                            <div class="mb-3">
+                                <label class="form-label">Full Name</label>
+                                <input type="text" class="form-control" placeholder="John Doe" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Email Address</label>
+                                <input type="email" class="form-control" placeholder="name@example.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Password</label>
+                                <input type="password" class="form-control" placeholder="Create a password" required>
+                            </div>
+                            <button type="submit" class="btn btn-success w-100 fw-bold">Create Account</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        <p class="mb-0 small">&copy; 2026 StudentPortfolio | Secure Access</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Simple script to simulate a successful login
+        document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                alert("This is a demo! In a real 3-tier system, this would verify your credentials against the SQL Database.");
+            });
+        });
+    </script>
+</body>
+</html>

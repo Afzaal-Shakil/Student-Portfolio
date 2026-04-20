@@ -1,0 +1,152 @@
+/* Custom Variables */
+:root {
+    --main-blue: #0d6efd;
+    --dark-bg: #212529;
+}
+
+/* Hero Image Placeholder Design */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    min-height: 70vh;
+}
+
+/* Section Headings */
+h2 {
+    font-weight: bold;
+    color: var(--dark-bg);
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h2::after {
+    content: '';
+    background: var(--main-blue);
+    height: 3px;
+    width: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Card Hover Effects */
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+/* Styling for the Project Badges */
+.badge {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    margin-right: 5px;
+    border-radius: 20px;
+}
+
+/* Add a nice hover effect to images */
+.img-fluid {
+    transition: transform 0.4s ease;
+}
+
+.img-fluid:hover {
+    transform: scale(1.03);
+}
+
+/* Navigation Active Link Color */
+.navbar-nav .nav-link.active {
+    color: #0d6efd !important;
+    font-weight: bold;
+}
+/*Dark Mode/*
+/* Dark Mode Colors */
+body.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-theme .bg-light {
+    background-color: #1a1a1a !important;
+    color: white;
+}
+
+body.dark-theme .card {
+    background-color: #242424;
+    color: white;
+    border: 1px solid #444;
+}
+
+/* Image styling for projects */
+.project-card img {
+    height: 250px;
+    object-fit: cover;
+}
+/* Makes all project images consistent */
+.project-card img {
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+/* Hero Section Background (Example) */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200');
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+}
+/* Card Hover Effect */
+.card-light-hover {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+/* Progress bar animation */
+.progress-bar {
+    border-radius: 5px;
+    transition: width 1.5s ease-in-out;
+}
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('https://images.unsplash.com/photo-1484417894907-623942c8ee29?w=1200');
+    background-size: cover;
+    background-position: center;
+    min-height: 60vh;
+}
+
+/* Make images inside cards the same height */
+.project-card img {
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Add a hover effect for the cards */
+.project-card {
+    transition: transform 0.3s ease;
+}
+.project-card:hover {
+    transform: scale(1.02);
+}
+footer a i {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+footer a:hover i {
+    color: #0dcaf0; /* This is the Bootstrap 'info' cyan color */
+    transform: scale(1.2); /* Makes the icon slightly bigger */
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afzaal Shakil | Full-Stack Developer Portfolio</title>
+    
+    <meta name="title" content="Afzaal Shakil | Full-Stack Developer Portfolio">
+    <meta name="description" content="Software development student specializing in 3-tier architecture, C#, Laravel, and SQL Server management systems.">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">StudentPortfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ms-auto align-items-center">
+                    <a class="nav-link active" href="index.html">Home</a>
+                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link" href="projects.html">Projects</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
+                    <button id="themeToggle" class="btn btn-outline-info btn-sm ms-lg-3">🌙 Dark Mode</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section text-center text-white d-flex align-items-center py-5">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Engineering Intelligent Systems</h1>
+            <p class="lead mt-3">Specializing in 3-Tier Architecture & Robust Management Solutions.</p>
+            <div class="d-flex justify-content-center gap-3 mt-4">
+                <a href="projects.html" class="btn btn-primary btn-lg shadow">View My Projects</a>
+               
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold text-uppercase">My Technical Stack</h2>
+            <div class="row g-4 text-center">
+                
+                <div class="col-md-4">
+                    <div class="card h-100 p-4 shadow-sm border-0">
+                        <div class="text-primary mb-3"><i class="bi bi-laptop fs-1"></i></div>
+                        <h4>Front-End Mastery</h4>
+                        <p class="text-muted small">Bootstrap 5 & JavaScript</p>
+                        <div class="mt-auto">
+                            <div class="progress mb-2" style="height: 10px;">
+                                <div class="progress-bar bg-primary" style="width: 100%">100%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 p-4 shadow-sm border-0">
+                        <div class="text-danger mb-3"><i class="bi bi-code-slash fs-1"></i></div>
+                        <h4>Back-End Logic</h4>
+                        <p class="text-muted small">C# WinForms & Laravel</p>
+                        <div class="mt-auto">
+                            <div class="progress mb-2" style="height: 10px;">
+                                <div class="progress-bar bg-danger" style="width: 100%">100%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 p-4 shadow-sm border-0">
+                        <div class="text-dark mb-3"><i class="bi bi-database fs-1"></i></div>
+                        <h4>Data Architecture</h4>
+                        <p class="text-muted small">SQL Server & LINQ</p>
+                        <div class="mt-auto">
+                            <div class="progress mb-2" style="height: 10px;">
+                                <div class="progress-bar bg-dark" style="width: 100%">100%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold text-uppercase">Featured Projects</h2>
+            <div class="row g-4">
+                
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm border-0 overflow-hidden">
+                        <img src="images/gym-project.jpg" class="card-img-top" alt="Gym Management System">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-primary">Gym Management System</h5>
+                            <p class="card-text text-muted">A desktop solution for member tracking and CRUD operations using SQL Server.</p>
+                            <span class="badge bg-secondary">C# WinForms</span>
+                            <span class="badge bg-info text-dark">SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm border-0 overflow-hidden">
+                        <img src="images/shopping-system.jpg" class="card-img-top" alt="Shopping System">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-success">Online Product Catalog</h5>
+                            <p class="card-text text-muted">A web-based shopping experience with form validation and dynamic logic.</p>
+                            <span class="badge bg-danger">Laravel</span>
+                            <span class="badge bg-warning text-dark">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4 mt-auto">
+        <div class="container">
+            <div class="mb-3">
+                <a href="https://github.com/Afzaal-Shakil" target="_blank" class="text-white me-3 fs-4"><i class="bi bi-github"></i></a>
+                <a href="mailto:afzaalshakil2005@gmail.com" class="text-white fs-4"><i class="bi bi-envelope-at-fill"></i></a>
+            </div>
+            <p class="mb-0 small">&copy; 2026 Afzaal Shakil | Student Portfolio | Built With Passion & Code </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

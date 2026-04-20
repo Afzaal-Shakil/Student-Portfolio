@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects | StudentPortfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">StudentPortfolio</a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link active" href="projects.html">Projects</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bg-primary text-white py-5 text-center">
+        <div class="container">
+            <h1>My Project Portfolio</h1>
+            <p class="lead">Detailed view of my software and web development assignments.</p>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        
+        <div class="row mb-5 align-items-center border-bottom pb-5">
+            <div class="col-md-6">
+                <img src="images/gym-project.jpg" class="img-fluid rounded shadow" alt="Gym System Screenshot">
+            </div>
+            <div class="col-md-6">
+                <h2 class="text-primary">Gym Management System</h2>
+                <p><strong>Database Used:</strong> SQL Server (GymDB)</p>
+                <p>This project was created to manage gym memberships. It includes two related tables (Members and Memberships) and handles full CRUD operations.</p>
+                <ul>
+                    <li>Student registration and photo upload.</li>
+                    <li>Subscription tracking.</li>
+                    <li>Search functionality for members.</li>
+                </ul>
+                <span class="badge bg-secondary">C# / WinForms</span>
+                <span class="badge bg-info text-dark">SQL Server</span>
+            </div>
+        </div>
+
+        <div class="row mb-5 align-items-center">
+    <div class="col-md-6 order-md-2">
+        <img src="images/shopping-system.jpg" class="img-fluid rounded shadow" alt="Shopping System Screenshot">
+    </div>
+    <div class="col-md-6 order-md-1">
+        <h2 class="text-success">E-Commerce Shopping System</h2>
+        <p><strong>Architecture:</strong> Laravel MVC</p>
+        <p>A dynamic web application where users can browse products, add items to a cart, and manage their profile.</p>
+        <ul>
+            <li><strong>Product Catalog:</strong> Categorized view of items.</li>
+            <li><strong>Shopping Cart:</strong> JavaScript-powered cart logic.</li>
+            <li><strong>Validation:</strong> Secure checkout form validation.</li>
+        </ul>
+        <span class="badge bg-danger">Laravel</span>
+        <span class="badge bg-warning text-dark">JavaScript</span>
+        <span class="badge bg-dark">MySQL</span>
+    </div>
+</div>
+
+    </div>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2026 StudentPortfolio | Created with Bootstrap</p>
+    </footer>
+
+</body>
+</html>
